@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat online</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/lib/animate.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="../node_modules/socket.io-client/dist/socket.io.js"></script> -->
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="section-login">
+        <div class="m-login">
+          <div class="container-fluid">
+            <div class="row mx-auto justify-content-center">
+              <div class="login-box">
+                <h3>What is your Username?</h3>
+                <input
+                  type="text"
+                  maxlength="255"
+                  id="input-username"
+                  class="form-control"
+                />
+                <button class="btn btn-enter">
+                  Enter
+                </button>
+              </div>
+            </div> 
+        </div>
+        <!-- /m-login -->
+      </section>
+
+      <section class="section-chat-app">
+        <div class="m-chat-app chat-app">
+          <div class="container">
+            <div class="row">
+              <div class="col-10">
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                    <h3 class="display-5">
+                      Chat <span class="user-counter"></span>
+                    </h3>
+                    <div class="chat-messages"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <span class="client-counter"></span>
+              </div>
+
+              <div class="col-9">
+                <input
+                  type="text"
+                  id="input-message"
+                  class="form-control"
+                  name="message"
+                />
+              </div>
+              <div class="col-3">
+                <button class="btn btn-primary btn-send">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- chat-app -->
+      </section>
+    </main>
+  </body>
+</html>

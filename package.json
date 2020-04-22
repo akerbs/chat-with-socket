@@ -1,0 +1,19 @@
+{
+  "name": "chat_with_socket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "socket",
+    "express"
+  ],
+  "author": "Anatol Kerbs <anker2702@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  }
+}
