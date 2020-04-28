@@ -44,3 +44,7 @@ body {
   margin-top: 10px;
   background-color: #fff;
 }
+
+.chat-messages {
+  word-wrap: break-word;
+}
